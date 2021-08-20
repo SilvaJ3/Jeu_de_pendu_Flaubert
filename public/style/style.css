@@ -1,0 +1,139 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.titre {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.playboard {
+    background: salmon;
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------------------- Pendu --------------------------------- */
+
+.pendu {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pendu img{
+    width: 75px;
+    height: 75px;
+    border: solid 2px white;
+}
+
+
+/* ----------------------------- Mot à découvrir ---------------------------- */
+
+.mot {
+    width: fit-content;
+    height: 100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+}
+
+.mot h1 {
+    padding: 0 auto;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+}
+
+.mot h1.hidden {
+    display: none;
+}
+
+.mot div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.barre {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    margin: 0 3px;
+}
+
+/* -------------------------------- Alphabet -------------------------------- */
+
+
+.alphabet {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* ----------------------------- Bouton alphabet ---------------------------- */
+
+.btn {
+    height: 40px;
+    width: 40px;
+    margin: 2px;
+    background-color: black;
+}
+
+.lettre {
+    color: white;
+    cursor: pointer;
+}
+
+.correct {
+    color: green;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+/* ---------------------------------- Info ---------------------------------- */
+
+.info h1 {
+    text-align: center;
+}
+
+/* --------------------------------- Rejouer -------------------------------- */
+
+.reload {
+    font-size: 30px;
+    border: none;
+    outline: none;
+    margin: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
